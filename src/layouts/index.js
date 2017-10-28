@@ -3,6 +3,13 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
+import flowerImage from '../images/andruska-flowers.png'; // Tell Webpack this JS file uses this image
+
+import { TypographyStyle, GoogleFont } from 'react-typography';
+// Best practice is to have a typography module
+// where you define your theme.
+import typography from '../utils/typography';
+
 import './index.css'
 
 const Header = () => (
@@ -12,6 +19,8 @@ const Header = () => (
       marginBottom: '1.45rem',
     }}
   >
+    <TypographyStyle typography={typography} />
+    <GoogleFont typography={typography} />
     <div
       style={{
         margin: '0 auto',
@@ -36,6 +45,7 @@ const Header = () => (
 
 const TemplateWrapper = ({ children }) => (
   <div>
+    <img src={flowerImage} alt="Logo" />;
     <Helmet
       title="Gatsby Default Starter"
       meta={[
