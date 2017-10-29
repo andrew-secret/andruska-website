@@ -1,0 +1,108 @@
+// #####################################################
+//  Vita
+// #####################################################
+
+@import "../lib/main"
+
+.wrapper
+    display: flex
+    padding: 4vw
+    position: relative
+    flex-direction: column
+
+    +respond(medium, min)
+        flex-direction: row
+
+
+.contentLeft
+    width: 100vw
+    margin-left: 8vw
+
+    +respond(medium, min)
+        width: 52vw
+
+
+
+.contentRight
+    width: 100vw
+
+    +respond(medium, min)
+        width: 40vw
+
+
+
+.headlineIntroduction
+    font-size: modular-scale(px, 9)
+    max-width: 300px
+    color: black
+
+    span
+        display: block
+
+    &:after
+        content: ""
+        position: absolute
+        top: 0
+        left: 2vw
+        width: 15vw
+        height: 60vh
+        background-color: $accent
+        z-index: -1
+
+
+.description
+    color: black
+    font-size: modular-scale(px, -1)
+    max-width: 450px
+
+
+// #####################################################
+//  contentRight
+// #####################################################
+
+.vita
+    font-size: modular-scale(px, 9)
+    color: $accent
+
+
+.headlineTopic
+    color: black
+    font-size: modular-scale(px, 5)
+
+
+.headlineDescription
+    color: black
+    font-size: modular-scale(px, -2)
+    text-transform: uppercase
+    font-weight: $bold
+    margin-bottom: 10px
+
+.textJobDescription
+    color: black
+    font-size: modular-scale(px, -1)
+    max-width: 500px
+    margin-bottom: 50px
+
+
+.skillsList,
+.educationList
+    display: flex
+    flex-wrap: wrap
+    list-style-type: none
+    padding-left: 0
+    margin: 0
+    max-width: 100%
+    margin-bottom: 50px
+
+    +respond(medium, min)
+        max-width: 70%
+
+
+
+.skillItem,
+.educationItem
+    font-weight: $bold
+    color: black
+
+.skillItem
+    flex: 0 0 50%
