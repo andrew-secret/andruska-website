@@ -1,0 +1,68 @@
+// Based on a modular scale with a ratio of 1.125 (Major Second).
+// Numbers are rounded for convenience.
+$modular-scale-range:
+    ( -3: 12.5
+    , -2: 14
+    , -1: 16
+    , 0: 18
+    , 1: 20
+    , 2: 22.5
+    , 3: 25.5
+    , 4: 29
+    , 5: 32.5
+    , 6: 36.5
+    , 7: 41
+    , 8: 46
+    , 9: 52
+    , 10: 58.5
+    );
+
+
+///
+/// This function increments up or down a defined scale,
+/// then returns an adjusted value. This helps establish
+/// consistent measurements and spacial relationships
+/// throughout your project.
+///
+/// @name modular-scale
+/// @group functions
+///
+/// @param {string} $unit - Unit parameter can be rem, em, px or stripped
+/// @param {number} $key - Can be any number existing in $modular-scale-range
+///
+/// @example
+///
+/// ```sass
+///     h1
+///         font-size: modular-scale("rem", 9)
+/// ```
+///
+
+@function modular-scale($unit, $key) {
+
+    @if map-has-key($modular-scale-range, $key) {
+
+        $value: map-get($modular-scale-range, $key);
+
+        @if $unit == rem {
+            @return rem($value)
+        }
+        @else if $unit == em {
+            @return em($value)
+        }
+        @else if $unit == px {
+            @return $value * 1px
+        }
+        @else if $unit == stripped {
+            @return $value
+        }
+        @else {
+            @error "#{$unit} is not a valid value"
+        }
+    }
+
+    @else {
+        @error "#{$key} does not exist in $modular-scale-range"
+    }
+
+}

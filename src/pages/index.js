@@ -1,13 +1,20 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import styles from './index.module.sass';
 
 const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+  <div className={styles.wrapper}>
+    <div className={styles.visual}>
+    </div>
+    <div className={styles.content}>
+      <h1 className={styles.headline}>
+        Hello, i'm André. I work with pixel & papier.
+      </h1>
+      <p className={styles.subheadline}>
+        Designer. Developer and Digital enthusiast.
+      </p>
+    </div>
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;
