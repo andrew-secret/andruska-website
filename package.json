@@ -4,12 +4,16 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "classnames": "^2.2.5",
     "gatsby": "^1.9.73",
     "gatsby-link": "^1.6.22",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.12",
     "gatsby-plugin-typography": "^1.7.10",
-    "material-design-icons": "^3.0.1"
+    "material-design-icons": "^3.0.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-portal": "^4.0.0-rc.0"
   },
   "keywords": [
     "gatsby"

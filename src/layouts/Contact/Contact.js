@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import styles from './Contact.module.sass';
+import ContactTemplate from '../ContactTemplate/ContactTemplate';
 
 class Counter extends Component {
     constructor() {
@@ -12,20 +14,22 @@ class Counter extends Component {
     };
 
     render() {
+        const button1 = <button>Open portal with pseudo modal</button>;
         return (
-            <div>
-                <button 
-                    onClick={this.toggleClass}>
-                click
-                </button>
-                {this.state.active === true ? (
-                    <p>ich bin daa!
-                        <i className="material-icons">alarm</i>
-                    </p>
-                ) : (
-                    <p>nee</p>
-            )}
-            </div>
+        <div>
+            <button
+                className={styles.contactButton}
+                onClick={this.toggleClass}>
+                <i className="material-icons">edit</i>
+            </button>
+            {this.state.active === true ? (
+                <ContactTemplate
+                    active={this.state.active}
+                    toggleClass={this.toggleClass}/>
+            ) : (
+                null
+        )}
+    </div>
     );
   }
 }
