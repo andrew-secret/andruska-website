@@ -1,14 +1,22 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import flowerImage from '../images/andruska-flowers.png';
+import React from 'react';
+import Link from 'gatsby-link';
+import styles from './index.module.sass';
+// import flowerImage from '../images/andruska-flowers.png';
 
 const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <img src={flowerImage} alt="Logo" />
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+  <div className={styles.wrapper}>
+    <div className={styles.visual}>
+    </div>
+    <div className={styles.content}>
+      <h1 className={styles.headline}>
+      Hello,
+      i'm André. I work with pixel &  papier.
+      </h1>
+      <p className={styles.subheadline}>
+        Designer. Developer and Digital enthusiast.
+      </p>
+    </div>
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;
