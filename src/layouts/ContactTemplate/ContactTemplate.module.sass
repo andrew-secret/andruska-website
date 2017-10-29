@@ -1,0 +1,60 @@
+// #####################################################
+//  Contact Template
+// #####################################################
+
+@import "../../lib/main"
+
+.contactOverlay
+    width: 95vw
+    height: 95vh
+    position: fixed
+    background-color: white
+    box-shadow: 0 10px 40px 0 rgba(black, .1)
+    margin: 2vh 2vw
+    top: 0
+    left: 0
+    display: flex
+    align-items: center
+    padding: 3vw
+    z-index: 10
+
+
+.left
+    width: 50vw
+
+
+.right
+    width: 50vw
+
+
+.headline
+    color: black
+    font-size: modular-scale(px, 9)
+    max-width: 400px
+    margin: 0 2vw
+
+    span
+        display: block
+
+
+.closeButton
+    position: absolute
+    top: 2vw
+    right: 2vw
+    border: none
+    background-color: transparent
+    cursor: pointer
+    outline: none
+    transition: opacity 250ms ease-in-out
+
+    &:hover,
+    &:focus
+        opacity: .65
+
+
+.inputName,
+.inputMail
+    width: 60%
+
+.inputMessage
+    height: 30vh
