@@ -1,0 +1,32 @@
+// #####################################################
+//  Footer
+// #####################################################
+
+.footer
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 2vw
+    height: 100px
+    position: relative
+
+    &:after
+        content: ''
+        width: 1px
+        height: 100px
+        background-color: black
+        position: absolute
+        left: 60vw
+
+.link
+    text-decoration: none
+    color: black
+    margin: 0 20px
+    font-weight: 500
+
+    &:first-child
+        margin-left: 0
+
+    &:hover,
+    &:focus
+        background-color: yellow

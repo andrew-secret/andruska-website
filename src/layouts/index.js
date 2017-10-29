@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import Header from './Header/Header'
+import Footer from './Footer/Footer'
 import Navigation from './Navigation/Navigation'
 import { TypographyStyle, GoogleFont } from 'react-typography';
 import typography from '../utils/typography';
@@ -24,6 +25,7 @@ const TemplateWrapper = ({ children }) => (
     <div>
       {children()}
     </div>
+    <Footer />
   </div>
 )
 
