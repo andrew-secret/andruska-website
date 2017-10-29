@@ -5,9 +5,12 @@
 @import "../../lib/main"
 
 .navigationList
-    display: flex
+    display: none
     margin: 0
     list-style: none
+
+    +respond(medium, min)
+        display: flex
 
 
 .navigationItem
@@ -52,3 +55,47 @@
             z-index: -10
             animation: fill 1s forwards
             opacity: 1
+
+// #####################################################
+//  Mobile Navigation
+// #####################################################
+
+.mobileNavigationList
+    position: fixed
+    width: 100vw
+    height: 100vh
+    top: 0
+    left: 0
+    background: $accent
+    margin: 0
+    z-index: 20
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    z-index: 11
+
+    +respond(medium, min)
+        display: none
+    
+    li
+        font-size: modular-scale(px, 7)
+
+        a:link
+            line-height: 1.3
+        
+            &:after
+                display: none
+
+.menuButton
+    border: none
+    background-color: transparent
+    cursor: pointer
+    font-weight: $bold
+    position: absolute
+    top: 25px
+    right: 5vw
+    z-index: 15
+
+    +respond(medium, min)
+        display: none

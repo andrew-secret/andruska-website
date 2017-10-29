@@ -2,6 +2,8 @@
 //  Footer
 // #####################################################
 
+@import "../../lib/main"
+
 .footer
     display: flex
     align-items: center
@@ -16,13 +18,40 @@
         height: 100px
         background-color: black
         position: absolute
-        left: 60vw
+        left: 59.5vw
+
+
+.left
+
+    +respond(medium, min)
+        width: 57.5vw
+        display: flex
+        align-items: flex-end
+        justify-content: flex-end
+
+    .link
+        display: none
+
+
+.right
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    width: 35vw
+
+    +respond(medium, min)
+        width: 38.5vw
+        justify-content: flex-end
+        flex-direction: row
 
 .link
     text-decoration: none
     color: black
-    margin: 0 20px
     font-weight: 500
+    transition: background-color 250ms ease-in-out
+
+    +respond(medium, min)
+        margin: 0 1vw
 
     &:first-child
         margin-left: 0

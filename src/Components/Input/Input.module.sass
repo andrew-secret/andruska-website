@@ -17,15 +17,19 @@
 .input,
 .textarea
     border: 2px solid black
-    padding: 10px
-    margin-bottom: 25px
+    padding: 5px
+    margin-bottom: 10px
     outline: none
     transition: border 200ms ease-in-out
-
 
     &:hover,
     &:focus
         border-color: $accent
+
+    +respond(medium, min)
+        padding: 10px
+        margin-bottom: 25px
+
 
 .textarea
     height: 20vh

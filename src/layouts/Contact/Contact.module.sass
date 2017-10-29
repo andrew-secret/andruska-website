@@ -2,6 +2,8 @@
 //  Contact
 // #####################################################
 
+@import "../../lib/main"
+
 .contactButton
     background-color: white
     border: 2px solid black
@@ -12,11 +14,16 @@
     width: 50px
     height: 50px
     position: fixed
-    left: 2vw
-    bottom: 80px
+    left: 5vw
+    bottom: 3vh
     cursor: pointer
     z-index: 10
     outline: none
+
+    +respond(medium, min)
+        left: 1.5vw
+        bottom: 3vh
+
 
     i
         transition: transform 250ms ease-in-out

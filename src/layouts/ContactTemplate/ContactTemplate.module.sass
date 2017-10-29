@@ -14,27 +14,41 @@
     top: 0
     left: 0
     display: flex
+    flex-direction: column
     align-items: center
     padding: 3vw
-    z-index: 10
+    z-index: 15
+
+    +respond(medium, min)
+        flex-direction: row
 
 
 .left
-    width: 50vw
+    width: 100%
+
+    +respond(medium, min)
+        width: 50vw 
 
 
 .right
-    width: 50vw
+    width: 100%
+
+    +respond(medium, min)
+        width: 50vw 
 
 
 .headline
     color: black
-    font-size: modular-scale(px, 9)
+    font-size: modular-scale(px, 4)
     max-width: 400px
-    margin: 0 2vw
+    margin: 2vh 2vw
 
     span
         display: block
+
+    +respond(medium, min)
+        margin: 0 2vw
+        font-size: modular-scale(px, 9)
 
 
 .closeButton
@@ -54,7 +68,9 @@
 
 .inputName,
 .inputMail
-    width: 60%
+
+    +respond(medium, min)
+        width: 60%
 
 .inputMessage
     height: 30vh

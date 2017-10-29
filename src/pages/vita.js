@@ -112,7 +112,7 @@ const Vita = () => (
           Graduation as a IT specialist 2012
         </li>
         <li className={styles.educationItem}>
-          Graduation as Media Designer 2015
+          Graduation as a Media Designer 2015
         </li>
       </ul>
     </div>
