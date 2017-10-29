@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import Navigation from './Navigation/Navigation'
+import Contact from './Contact/Contact'
 import { TypographyStyle, GoogleFont } from 'react-typography';
 import typography from '../utils/typography';
 import './index.scss'
@@ -25,6 +26,7 @@ const TemplateWrapper = ({ children }) => (
     <div>
       {children()}
     </div>
+    <Contact />
     <Footer />
   </div>
 )

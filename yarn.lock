@@ -3047,8 +3047,8 @@ gatsby-react-router-scroll@^1.0.3:
     warning "^3.0.0"
 
 gatsby@^1.9.73:
-  version "1.9.80"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.80.tgz#99baae0a4c20ef580e5d4b92056deb3539ae8367"
+  version "1.9.82"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.82.tgz#b6b06bdb71ce342d2abac924dbb6ea13c6641442"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -4540,6 +4540,10 @@ map-visit@^1.0.0:
   resolved "https://registry.yarnpkg.com/map-visit/-/map-visit-1.0.0.tgz#ecdca8f13144e660f1b5bd41f12f3479d98dfb8f"
   dependencies:
     object-visit "^1.0.0"
+
+material-design-icons@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/material-design-icons/-/material-design-icons-3.0.1.tgz#9a71c48747218ebca51e51a66da682038cdcb7bf"
 
 math-expression-evaluator@^1.2.14:
   version "1.2.17"
