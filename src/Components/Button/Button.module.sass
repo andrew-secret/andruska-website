@@ -1,0 +1,46 @@
+// #####################################################
+//  Button
+// #####################################################
+
+@import "../../lib/main"
+
+.buttonStyle
+    margin-right: 30px
+    background-color: white
+    border-color: black
+    padding: 15px 30px
+    font-size: modular-scale(px, 0)
+    letter-spacing: 0.7
+    color: black
+    position: relative
+    border-width: 2px
+    border-style: solid
+    border-color: black
+    cursor: pointer
+    display: inline-flex
+    text-transform: uppercase
+    transition: top 200ms ease-in-out, left 200ms ease-in-out
+
+    &:focus
+        outline: none
+
+    &:after
+        content: ""
+        position: absolute
+        width: 100%
+        height: calc(100% + 3px)
+        background-color: $accent
+        top: 6px
+        left: 12px
+        z-index: -1
+        transition: all 200ms ease-in
+
+    &:hover:after
+        top: 0
+        left: 0
+        height: 100%
+
+    &:focus:after
+        top: 0
+        left: 0
+        height: 100%
