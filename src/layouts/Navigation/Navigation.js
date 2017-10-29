@@ -17,8 +17,8 @@ const Navigation = () => (
         <ListLink to="/">
             Home
         </ListLink>
-        <ListLink to="/about">
-            About
+        <ListLink to="/vita">
+            Vita
         </ListLink>
     </ul>
 );
