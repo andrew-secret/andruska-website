@@ -10,11 +10,11 @@ const Vita = () => (
         <span>Hello,</span> i’m André and live in Hamburg.
       </h1>
       <p className={styles.description}>
-        With a background in desgin, tech, and freelance, i'm 
-        comfortable with the digital world. As a fullstack designer 
-        i have a big passion for frontend technologies. I learn new things 
+        With a background in desgin, tech, and freelance, I'm 
+        comfortable within the digital world. As a fullstack designer 
+        I have a big passion for frontend technologies. I learn new things 
         every day and still have to learn a lot, 
-        which is really exiting for me. If i'm not stuck on my computer, you 
+        which is really exiting for me. When I'm not stuck on my computer, you 
         can find me on the streets of Hamburg with my skateboard 
         or in the ocean on a surfboard.
       </p>
@@ -33,11 +33,11 @@ const Vita = () => (
         Jimdo - Fullstack Designer 09/2015 - now
       </h4>
       <p className={styles.textJobDescription}>
-        As part of the Template Design Team I been responsible 
+        As part of the Template Design Team I have been responsible 
         for our templates. I worked on concepts and on the technical 
-        implementation of the templates into the Jimdo CMS. We refactor all 
-        40 templates and make them responsive. After that i switched to another team. 
-        Currently we’re responsible for the whole funnel process at Jimdo.
+        implementation of the templates into the Jimdo CMS. We refactored all 
+        40 templates and made them responsive. After that, I switched to another team. 
+        Currently we are responsible for the whole funnel process at Jimdo.
       </p>
 
       <h4 className={styles.headlineDescription}>
@@ -45,9 +45,9 @@ const Vita = () => (
       </h4>
       <p className={styles.textJobDescription}>
         I made the decision to found my own small business to develop 
-        myself and earn more experience with digital products. I try to focus 
-        on projects where i can learn a lot. This journey is often really exciting 
-        for me, because i discover new things and meet new intersting people. 
+        myself and gain more experience with digital products. I try to focus 
+        on projects where I can learn a lot. This journey is often really exciting 
+        for me, because I discover new things and meet new intersting people. 
         Sometimes it's exhausting but in a good way.
       </p>
 
@@ -56,11 +56,11 @@ const Vita = () => (
       </h4>
       <p className={styles.textJobDescription}>
         It is an agency based in the northern part of 
-        germany, where i started my apprenticeship as a 
+        Germany, where I started my apprenticeship as a 
         media designer. It was an really exciting time for 
-        me where i get in touch with a lot of creativity and 
+        me where I got in touch with a lot of creativity and 
         digital power. I worked on digital projects, 
-        3D stuff and print.
+        3D stuff, and print.
       </p>
 
       <h3 className={styles.headlineTopic}>
