@@ -8,7 +8,7 @@ const IndexPage = () => (
     </div>
     <div className={styles.content}>
       <h1 className={styles.headline}>
-        Hello, i'm André. I work with pixel & papier.
+        Hello, I'm André. I work with pixel & papier.
       </h1>
       <p className={styles.subheadline}>
         Designer. Developer and Digital enthusiast.
