@@ -10,12 +10,13 @@ const Vita = () => (
         <span>Hello,</span> i’m André and live in Hamburg.
       </h1>
       <p className={styles.description}>
-        I’m a fullstack designer, who’s cofortable with 
-        basic frontend-technologies. As a fullstack designer 
-        i’m able to work with different HTML, CSS, JavaScript and 
-        some current technologies. I try do work with Sketch 
-        and InVision on digital products, but i’m 
-        also familiar with Adobe CC.
+        With a background in desgin, tech, and freelance, i'm 
+        comfortable with the digital world. As a fullstack designer 
+        i have a big passion for frontend technologies. I learn new things 
+        every day and still have to learn a lot, 
+        which is really exiting for me. If i'm not stuck on my computer, you 
+        can find me on the streets of Hamburg with my skateboard 
+        or in the ocean on surfboard.
       </p>
       <img src={portrait}
         className={styles.vitaPicture} 
@@ -35,9 +36,8 @@ const Vita = () => (
         As part of the Template Design Team I been responsible 
         for our templates. I worked on concepts and on the technical 
         implementation of the templates into the Jimdo CMS. We refactor all 
-        40 templates and make them responsive. After that i switched the 
-        team named as jimdo.com. Currently we’re responsible 
-        for the whole funnel process at Jimdo.
+        40 templates and make them responsive. After that i switched to another team. 
+        Currently we’re responsible for the whole funnel process at Jimdo.
       </p>
 
       <h4 className={styles.headlineDescription}>
@@ -52,11 +52,11 @@ const Vita = () => (
       </p>
 
       <h4 className={styles.headlineDescription}>
-        Nikdin - Allrounder
+        Nikdin - Allrounder 06/2012 - 09/2015
       </h4>
       <p className={styles.textJobDescription}>
-        It is an agency bases in the northern part of 
-        germany, where i started my apprenticeships as a 
+        It is an agency based in the northern part of 
+        germany, where i started my apprenticeship as a 
         media designer. It was an really exciting time for 
         me where i get in touch with a lot of creativity and 
         digital power. I worked on digital projects, 
