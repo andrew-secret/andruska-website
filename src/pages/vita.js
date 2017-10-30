@@ -16,7 +16,7 @@ const Vita = () => (
         every day and still have to learn a lot, 
         which is really exiting for me. If i'm not stuck on my computer, you 
         can find me on the streets of Hamburg with my skateboard 
-        or in the ocean on surfboard.
+        or in the ocean on a surfboard.
       </p>
       <img src={portrait}
         className={styles.vitaPicture} 
