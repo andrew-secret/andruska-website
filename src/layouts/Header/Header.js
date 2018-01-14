@@ -5,8 +5,6 @@ import styles from './Header.module.sass';
 import Link from "gatsby-link";
 import logo from '../../images/andruska-logo.svg';
 
-console.log(styles);
-
 const Header = () => (
     <div className={styles.header}>
         <Link to="/">
