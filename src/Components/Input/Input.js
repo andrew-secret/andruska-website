@@ -9,7 +9,7 @@ const Input = (props) => {
 
         <label 
             className={styles.label}
-            for={props.type}>
+            htmlFor={props.type}>
             {props.label}
         </label>
         {props.type === 'text' ? (
