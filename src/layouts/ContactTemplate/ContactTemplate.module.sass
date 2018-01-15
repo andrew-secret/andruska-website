@@ -18,6 +18,9 @@
     align-items: center
     padding: 3vw
     z-index: 15
+    opacity: 0
+    transition: opacity 500ms ease-in
+    background: red
 
     +respond(medium, min)
         flex-direction: row
@@ -65,6 +68,14 @@
     &:focus
         opacity: .65
 
+.closeIcon
+    background-image: url('../../images/ic_clear_black_24px.svg')
+    background-repeat: no-repeat
+    background-position: center
+
+
+.srOnly
+    visibility: hidden
 
 .inputName,
 .inputMail
