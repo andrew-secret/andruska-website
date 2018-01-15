@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import styles from './Contact.module.sass';
 import ContactTemplate from '../ContactTemplate/ContactTemplate';
+import create from '../../images/ic_create_black_24px.svg';
 
 class Counter extends Component {
     constructor() {
@@ -14,23 +15,26 @@ class Counter extends Component {
     };
 
     render() {
-        const button1 = <button>Open portal with pseudo modal</button>;
         return (
-        <div>
-            <button
-                className={styles.contactButton}
-                onClick={this.toggleClass}>
-                <i className="material-icons">edit</i>
-            </button>
-            {this.state.active === true ? (
-                <ContactTemplate
-                    active={this.state.active}
-                    toggleClass={this.toggleClass}/>
-            ) : (
-                null
-        )}
-    </div>
-    );
+            <div>
+                <button
+                    className={styles.contactButton}
+                    onClick={this.toggleClass}>
+                    <i className={styles.createIcon}>
+                        <span className={styles.srOnly}>
+                            Contact
+                        </span>
+                    </i>
+                </button>
+                {this.state.active === true ? (
+                    <ContactTemplate
+                        active={this.state.active}
+                        toggleClass={this.toggleClass}/>
+                ) : (
+                    null
+                )}
+            </div>
+        );
   }
 }
 
