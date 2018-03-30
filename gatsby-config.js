@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Andruska – pixel und papiert`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,4 +13,4 @@ module.exports = {
     },
   ],
   pathPrefix: `/andruska-website`,
-}
+};
