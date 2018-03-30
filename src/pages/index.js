@@ -4,8 +4,7 @@ import styles from './index.module.sass';
 
 const IndexPage = () => (
   <div className={styles.wrapper}>
-    <div className={styles.visual}>
-    </div>
+    <div className={styles.visual} />
     <div className={styles.content}>
       <h1 className={styles.headline}>
         Hello, I'm André. I work with pixel & papier.
@@ -16,5 +15,4 @@ const IndexPage = () => (
     </div>
   </div>
 );
-
 export default IndexPage;
