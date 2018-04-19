@@ -7,25 +7,36 @@ class Counter extends Component {
   constructor() {
     super();
     this.state = { active: false };
-    this.toggleClass = this.toggleClass.bind(this);
+    this.openContactOverlay = this.openContactOverlay.bind(this);
+    this.closeContactOverlay = this.closeContactOverlay.bind(this);
   }
-  toggleClass() {
-    const currentState = this.state.active;
-    this.setState({ active: !currentState });
+  openContactOverlay() {
+    this.setState({
+      active: true,
+    });
+  }
+
+  closeContactOverlay(event) {
+    this.setState({
+      active: false,
+    });
   }
 
   render() {
     return (
       <div>
-        <button className={styles.contactButton} onClick={this.toggleClass}>
+        <button
+          className={styles.contactButton}
+          onClick={this.openContactOverlay}
+        >
           <i className={styles.createIcon}>
             <span className={styles.srOnly}>Contact</span>
           </i>
         </button>
         {this.state.active && (
           <ContactTemplate
-            active={this.state.active}
-            toggleClass={this.toggleClass}
+            handleCloseOnEnter={this.handleCloseOnEnter}
+            closeContactOverlay={this.closeContactOverlay}
           />
         )}
       </div>
