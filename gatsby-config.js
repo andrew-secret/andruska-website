@@ -11,6 +11,17 @@ module.exports = {
         pathToConfigModule: `src/utils/typography.js`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-typescript',
+      options: {
+        transpileOnly: true,
+        compilerOptions: {
+          target: `esnext`,
+          experimentalDecorators: true,
+          jsx: `react`,
+        },
+      },
+    },
   ],
   pathPrefix: `/andruska-website`,
 };
