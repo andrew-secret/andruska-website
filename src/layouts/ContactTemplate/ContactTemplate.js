@@ -5,16 +5,12 @@ import Button from '../../Components/Button/Button';
 import Input from '../../Components/Input/Input';
 
 const ContactTemplate = props => {
-  const ModalContactClasses = classnames(styles.contactOverlay, {
-    [styles.isActive]: props.active === true,
-  });
-
   return (
-    <div className={ModalContactClasses}>
+    <div className={styles.contactOverlay}>
       <button
         type="button"
         className={styles.closeButton}
-        onClick={props.toggleClass}
+        onClick={props.closeContactOverlay}
       >
         <i className={styles.closeIcon}>
           <span className={styles.srOnly}>close</span>
