@@ -1,8 +1,16 @@
-import React from 'react';
-import classnames from 'classnames';
-import styles from './Input.module.sass';
+import * as React from 'react';
+import * as classnames from 'classnames';
 
-const Input = props => {
+const styles = require('./Input.module.sass');
+
+interface Props {
+  className?: string;
+  label: string;
+  type: 'text' | 'email' | 'name';
+  required?: boolean;
+}
+
+export const Input: React.SFC<Props> = props => {
   const inputClasses = classnames(styles.input, props.className);
   return (
     <div className={styles.wrapper}>
@@ -21,12 +29,4 @@ const Input = props => {
       )}
     </div>
   );
-};
-
-export default Input;
-
-Input.defaultProps = {
-  type: 'name',
-  label: 'This is a label',
-  required: false,
 };
