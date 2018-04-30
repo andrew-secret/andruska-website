@@ -1,22 +1,29 @@
-import React, { Component } from 'react';
-import styles from './Contact.module.sass';
-import ContactTemplate from '../ContactTemplate/ContactTemplate';
-import create from '../../images/ic_create_black_24px.svg';
+import * as React from 'react';
+import { ContactTemplate } from '../ContactTemplate/ContactTemplate';
 
-class Counter extends Component {
-  constructor() {
-    super();
+const styles = require('./Contact.module.sass');
+const create = require('../../images/ic_create_black_24px.svg');
+
+interface State {
+  active?: boolean;
+  openContactOverlay?: () => void;
+  closeContactOverlay?: () => void;
+}
+
+export class Contact extends React.Component<{}, State> {
+  constructor(props: State) {
+    super(props);
     this.state = { active: false };
     this.openContactOverlay = this.openContactOverlay.bind(this);
     this.closeContactOverlay = this.closeContactOverlay.bind(this);
   }
-  openContactOverlay() {
+  private openContactOverlay() {
     this.setState({
       active: true,
     });
   }
 
-  closeContactOverlay(event) {
+  private closeContactOverlay() {
     this.setState({
       active: false,
     });
@@ -34,14 +41,9 @@ class Counter extends Component {
           </i>
         </button>
         {this.state.active && (
-          <ContactTemplate
-            handleCloseOnEnter={this.handleCloseOnEnter}
-            closeContactOverlay={this.closeContactOverlay}
-          />
+          <ContactTemplate closeContactOverlay={this.closeContactOverlay} />
         )}
       </div>
     );
   }
 }
-
-export default Counter;

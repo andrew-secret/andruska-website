@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@types/classnames": "^2.2.3",
+    "@types/react-helmet": "^5.0.6",
     "classnames": "^2.2.5",
     "gatsby": "^1.9.73",
     "gatsby-link": "^1.6.22",
@@ -11,7 +13,6 @@
     "gatsby-plugin-react-next": "^1.0.11",
     "gatsby-plugin-sass": "^1.0.12",
     "gatsby-plugin-typescript": "^1.4.20",
-    "gatsby-plugin-typography": "^1.7.10",
     "material-design-icons": "^3.0.1",
     "react": "^16.3.2",
     "react-dom": "^16.0.0",
