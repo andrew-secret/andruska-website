@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './Footer.module.sass';
+import * as React from 'react';
+const styles = require('./Footer.module.sass');
 
 const urls = {
   github: 'https://github.com/andrew-secret',
@@ -7,7 +7,7 @@ const urls = {
   codepen: 'https://codepen.io/andrew_secret/',
 };
 
-const Footer = () => (
+export const Footer: React.SFC = () => (
   <div className={styles.footer}>
     <div className={styles.left}>
       <a className={styles.link} href="mailto:andre.rusakow@gmail.com">
@@ -27,5 +27,3 @@ const Footer = () => (
     </div>
   </div>
 );
-
-export default Footer;
