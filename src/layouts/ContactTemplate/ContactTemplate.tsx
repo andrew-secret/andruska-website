@@ -1,10 +1,15 @@
-import React from 'react';
-import styles from './ContactTemplate.module.sass';
-import classnames from 'classnames';
-import Button from '../../Components/Button/Button';
-import Input from '../../Components/Input/Input';
+import * as React from 'react';
+import * as classNames from 'classnames';
+import { Button } from '../../Components/Button/Button';
+import { Input } from '../../Components/Input/Input';
 
-const ContactTemplate = props => {
+const styles = require('./ContactTemplate.module.sass');
+
+interface Props {
+  closeContactOverlay: () => void;
+}
+
+export const ContactTemplate: React.SFC<Props> = props => {
   return (
     <div className={styles.contactOverlay}>
       <button
@@ -27,21 +32,21 @@ const ContactTemplate = props => {
             label="Name"
             className={styles.inputName}
             type="name"
-            required="true"
+            required={true}
           />
 
           <Input
             label="E-Mail"
             className={styles.inputMail}
             type="email"
-            required="true"
+            required={true}
           />
 
           <Input
             label="Message"
             className={styles.inputMessage}
             type="text"
-            required="true"
+            required={true}
           />
 
           <Button type="submit" label="Submit" />
@@ -50,5 +55,3 @@ const ContactTemplate = props => {
     </div>
   );
 };
-
-export default ContactTemplate;
