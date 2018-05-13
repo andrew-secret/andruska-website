@@ -4,15 +4,16 @@ import Helmet from 'react-helmet';
 import { Header } from './Header/Header';
 import { Footer } from './Footer/Footer';
 import { Contact } from './Contact/Contact';
-import './index.scss';
+
+require('./index.scss');
 
 interface Props {
-  children?: () => React.ReactNode;
+  children: () => React.ReactNode;
   typography?: any;
 }
 
 const TemplateWrapper: React.SFC<Props> = ({ children }) => (
-  <div>
+  <React.Fragment>
     <Helmet
       title="Andruska - pixel und papier"
       meta={[
@@ -24,7 +25,7 @@ const TemplateWrapper: React.SFC<Props> = ({ children }) => (
     <div>{children()}</div>
     <Contact />
     <Footer />
-  </div>
+  </React.Fragment>
 );
 
 export default TemplateWrapper;
