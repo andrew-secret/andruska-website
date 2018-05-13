@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `Andruska – pixel und papiert`,
@@ -14,6 +18,13 @@ module.exports = {
           experimentalDecorators: true,
           jsx: `react`,
         },
+      },
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.GATSBY_SPACE_ID,
+        accessToken: process.env.GATSBY_ACCESS_TOKEN,
       },
     },
   ],
