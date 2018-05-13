@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "andruska-website",
+  "description": "Andruska portfolio website with contentful and graphQL",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "André Rusakow <andre.rusakow@googlemail.com>",
   "dependencies": {
     "@types/classnames": "^2.2.3",
     "@types/react-helmet": "^5.0.6",
