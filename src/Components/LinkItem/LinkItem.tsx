@@ -15,6 +15,7 @@ export const LinkItem: React.SFC<Props> = props => {
   return (
     <li className={styles.linkItem}>
       <Link
+        exact
         to={props.to}
         activeClassName={styles.active}
         onClick={props.onClick}
