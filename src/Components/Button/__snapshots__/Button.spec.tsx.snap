@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders with snapshots 1`] = `
+<button
+  className=""
+  onClick={undefined}
+  type="submit"
+>
+  some button
+  <i
+    className="material-icons"
+  />
+</button>
+`;
