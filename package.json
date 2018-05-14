@@ -70,10 +70,12 @@
     "@types/enzyme": "^3.1.10",
     "@types/enzyme-adapter-react-16": "^1.0.2",
     "@types/jest": "^22.2.3",
+    "@types/react-test-renderer": "^16.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.4.3",
     "prettier": "^1.7.4",
+    "react-test-renderer": "^16.3.2",
     "ts-jest": "^22.4.6"
   }
 }
