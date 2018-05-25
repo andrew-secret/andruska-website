@@ -3,7 +3,6 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import { Header } from './Header/Header';
 import { Footer } from './Footer/Footer';
-import { Contact } from './Contact/Contact';
 
 require('./index.scss');
 
@@ -23,7 +22,6 @@ const TemplateWrapper: React.SFC<Props> = ({ children }) => (
     />
     <Header />
     <div>{children()}</div>
-    <Contact />
     <Footer />
   </React.Fragment>
 );
