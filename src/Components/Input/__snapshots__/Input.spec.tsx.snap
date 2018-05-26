@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Input email renders correctly 1`] = `
+<div
+  className={undefined}
+>
+  <label
+    className={undefined}
+    htmlFor="text"
+  >
+    some label
+  </label>
+  <textarea
+    className={undefined}
+  />
+</div>
+`;
+
+exports[`Input Input is required renders correctly 1`] = `
+<div
+  className={undefined}
+>
+  <label
+    className={undefined}
+    htmlFor="text"
+  >
+    some label
+  </label>
+  <textarea
+    className={undefined}
+  />
+</div>
+`;
+
+exports[`Input Input name renders correctly 1`] = `
+<div
+  className={undefined}
+>
+  <label
+    className={undefined}
+    htmlFor="name"
+  >
+    some label
+  </label>
+  <input
+    className=""
+    id="name"
+    required={undefined}
+    type="name"
+  />
+</div>
+`;
+
+exports[`Input Input text renders correctly 1`] = `
+<div
+  className={undefined}
+>
+  <label
+    className={undefined}
+    htmlFor="text"
+  >
+    some label
+  </label>
+  <textarea
+    className={undefined}
+  />
+</div>
+`;
+
+exports[`Input Input with className renders correctly 1`] = `
+<div
+  className={undefined}
+>
+  <label
+    className={undefined}
+    htmlFor="text"
+  >
+    some label
+  </label>
+  <textarea
+    className={undefined}
+  />
+</div>
+`;
